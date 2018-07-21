@@ -61,8 +61,11 @@ export PS1="\[\033[32m\]\w\[\033[36m\]\$(parse_git_branch)\[\033[00m\] $ "
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
+# terminal alias
+
 alias c="clear"
 alias chrome='open -a "Google Chrome"'
+alias vim="vi"
 
 # git alias
 
@@ -76,6 +79,6 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias gb='git branch'
 alias gg='git grep'
-
+alias gpf='git push origin head --force-with-lease'
 
 alias mocks='cd ~/Work/_git/Tools/MockRestServices && ./restartMockServiceMac.sh'

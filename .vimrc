@@ -29,6 +29,9 @@ let base16colorspace=256
 " 120 char column 
 set colorcolumn=120
 
+" remap Esc
+inoremap jj <Esc>
+
 " Ctrl-C to open/close NerdTree
 map <C-n> :NERDTreeToggle<CR>
 
