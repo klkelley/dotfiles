@@ -7,9 +7,8 @@ Plug 'derekwyatt/vim-scala'
 Plug 'vim-syntastic/syntastic'
 Plug 'itchyny/lightline.vim'
 
+" theme
 Plug 'w0ng/vim-hybrid'
-
-
 
 call plug#end()
 
@@ -30,7 +29,26 @@ let base16colorspace=256
 " 120 char column 
 set colorcolumn=120
 
+" Ctrl-C to open/close NerdTree
 map <C-n> :NERDTreeToggle<CR>
+
+let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+
+" Enable backspace
+set backspace=indent,eol,start
+
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 
 " ================================================ lightline =====================================================
