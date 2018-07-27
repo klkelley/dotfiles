@@ -6,6 +6,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'derekwyatt/vim-scala'
 Plug 'vim-syntastic/syntastic'
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-commentary'
+Plug 'Raimondi/delimitMate'
 
 " theme
 Plug 'w0ng/vim-hybrid'
