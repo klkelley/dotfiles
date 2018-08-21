@@ -82,4 +82,11 @@ alias gb='git branch'
 alias gg='git grep'
 alias gpf='git push origin head --force-with-lease'
 
+# git alias for annoying .idea run configs
+alias goaway='git checkout .idea/runConfigurations/Run_All_Local_Services.xml'
+
+
 alias mocks='cd ~/Work/_git/Tools/MockRestServices && ./restartMockServiceMac.sh'
+
+
+PATH=$PATH:/usr/local/sbin

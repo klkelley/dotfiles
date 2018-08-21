@@ -1,6 +1,6 @@
 .vim/plugged/vim-colorschemes
 .DS_Store
-.idea
+.idea/*
 */.idea/*
 lein/repl-history
 pom.xml.asc
