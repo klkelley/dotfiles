@@ -8,6 +8,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'Raimondi/delimitMate'
+Plug 'elmcast/elm-vim'
 
 " theme
 Plug 'w0ng/vim-hybrid'
@@ -42,18 +43,6 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 
 " Enable backspace
 set backspace=indent,eol,start
-
-" Disable Arrow keys in Escape mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
-" Disable Arrow keys in Insert mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
 
 
 " ================================================ lightline =====================================================

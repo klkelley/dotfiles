@@ -66,6 +66,8 @@ bind "set show-all-if-ambiguous on"
 alias c="clear"
 alias chrome='open -a "Google Chrome"'
 alias vim="vi"
+alias weather="curl wttr.in/Chicago"
+alias bashrc='vim ~/.bashrc'
 
 # git alias
 
@@ -83,10 +85,20 @@ alias gg='git grep'
 alias gpf='git push origin head --force-with-lease'
 
 # git alias for annoying .idea run configs
-alias goaway='git checkout .idea/runConfigurations/Run_All_Local_Services.xml'
+alias goaway='git checkout .idea/runConfigurations/'
+
+# alias for personal (wo)man pages
+alias pman='cat ~/.pman | less'
+alias pmanc='vim ~/.pman'
 
 
 alias mocks='cd ~/Work/_git/Tools/MockRestServices && ./restartMockServiceMac.sh'
-
+alias msoRun='cd ui && npm install && cd .. && sbt run'
+alias startDevDocker='cd ~/Work/_git/Tools/docker-dev-db/ && bash ./startup_from_backups.sh'
+alias bootstrap='cd ~/Work/_git/Databases/cms && git pull && migrate bootstrap && cd ../client-portal/ && git pull &&
+  migrate up && cd ../cms/ && migrate up'
 
 PATH=$PATH:/usr/local/sbin
+
+# added by travis gem
+[ -f /Users/karakelley/.travis/travis.sh ] && source /Users/karakelley/.travis/travis.sh

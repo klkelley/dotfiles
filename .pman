@@ -1,0 +1,2 @@
+-- Delete feature branches or branches that match a pattern
+git branch --list feature/7028* | xargs git branch -d

@@ -1,7 +1,15 @@
  # This is Git's per-user configuration file.
- [user]
-     name = klkelley
-     email = kelley.15@gmail.com
+[user]
+  name = klkelley
+  email = kelley.15@gmail.com
 
- [includeIf "gitdir:~/Work/"]
-         path = ~/Work/.gitconfig
+[alias]
+  killremote = push origin --delete
+  st = status
+  co = checkout
+
+[includeIf "gitdir:~/Work/"]
+  path = ~/Work/.gitconfig
+
+[includeIf "gitdir:~/code-challenges/"]
+  path = ~/code-challenges/.gitconfig
