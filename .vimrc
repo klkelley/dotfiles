@@ -9,6 +9,15 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'Raimondi/delimitMate'
 Plug 'elmcast/elm-vim'
+Plug 'elixir-editors/vim-elixir'
+Plug 'tpope/vim-endwise'
+Plug 'w0rp/ale'
+Plug 'leafgarland/typescript-vim'
+Plug 'junegunn/fzf.vim'
+
+
+
+
 
 " theme
 Plug 'w0ng/vim-hybrid'
