@@ -1,2 +1,14 @@
 -- Delete feature branches or branches that match a pattern
 git branch --list feature/7028* | xargs git branch -d
+
+-- Get default branch for a project 
+git remote show origin | grep “HEAD branch” | sed ‘s/.*: //’
+
+-- Git Force Pull 
+git reset --hard origin/<branch_name>
+
+-- POSTGRES <> View database by user 
+psql -d [db_name] -U [username]
+
+-- POSTGRES <> auto fit output to screen 
+\x auto

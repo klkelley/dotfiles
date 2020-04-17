@@ -14,4 +14,4 @@
 [includeIf "gitdir:~/code-challenges/"]
   path = ~/code-challenges/.gitconfig
 [core]
-	excludesfile = /Users/karakelley/.gitignore_global
+	excludesfile = /Users/karakelley/.gitignore
