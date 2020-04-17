@@ -1,4 +1,4 @@
-.vim/plugged/vim-colorschemes
+.vim/
 .DS_Store
 .idea/*
 */.idea/*
@@ -16,3 +16,4 @@ pom.xml.asc
 .nrepl-port
 .bloop
 .metals
+*.swp

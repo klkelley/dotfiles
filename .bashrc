@@ -67,7 +67,8 @@ alias c="clear"
 alias chrome='open -a "Google Chrome"'
 alias vim="vi"
 alias weather="curl wttr.in/Chicago"
-alias bashrc='vim ~/.bashrc'
+alias bashc='vim ~/.bashrc'
+alias bashs='source ~/.bashrc'
 
 # git alias
 
@@ -82,21 +83,16 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias gb='git branch'
 alias gg='git grep'
-alias gpf='git push origin head --force-with-lease'
+alias gpfwl='git push origin head --force-with-lease'
+alias noedit='git commit --amend --no-edit'
+alias gcap='git commit --amend --no-edit && git push --force-with-lease'
 
-# git alias for annoying .idea run configs
-alias goaway='git checkout .idea/runConfigurations/'
 
 # alias for personal (wo)man pages
 alias pman='cat ~/.pman | less'
 alias pmanc='vim ~/.pman'
 
 
-alias mocks='cd ~/Work/_git/Tools/MockRestServices && ./restartMockServiceMac.sh'
-alias msoRun='cd ui && npm install && cd .. && sbt run'
-alias startDevDocker='cd ~/Work/_git/Tools/docker-dev-db/ && bash ./startup_from_backups.sh'
-alias bootstrap='cd ~/Work/_git/Databases/cms && git pull && migrate bootstrap && cd ../client-portal/ && git pull &&
-  migrate up && cd ../cms/ && migrate up'
 
 PATH=$PATH:/usr/local/sbin
 
