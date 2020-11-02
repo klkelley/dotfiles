@@ -14,6 +14,8 @@ Plug 'tpope/vim-endwise'
 Plug 'w0rp/ale'
 Plug 'leafgarland/typescript-vim'
 Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 
 

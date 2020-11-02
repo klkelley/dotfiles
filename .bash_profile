@@ -3,7 +3,7 @@ if [ -f ~/.bashrc ]; then
 fi
 # export CATALINA_HOME="/Users/karakelley/code/tomcat"
 export CATALINA_HOME="/usr/local/Cellar/tomcat@8/8.5.32/libexec/"
-JAVA_HOME="/Library/Java/JavaVirtualMachine/jdk1.8.0_181.jdk/Contents/Home"
+JAVA_HOME="$(/usr/libexec/java_home -v 1.11)"
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
