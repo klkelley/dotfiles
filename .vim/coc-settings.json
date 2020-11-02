@@ -1,0 +1,8 @@
+{
+    "languageserver": {
+        "elixirLS": {
+            "command": "/Users/karakelley/code/elixir-ls/release/language_server.sh",
+            "filetypes": ["elixir", "eelixir"]
+        }
+    }
+}
