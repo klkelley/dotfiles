@@ -12,3 +12,7 @@ psql -d [db_name] -U [username]
 
 -- POSTGRES <> auto fit output to screen 
 \x auto
+
+--update Hugo submodule
+git submodule update --remote --merge
+

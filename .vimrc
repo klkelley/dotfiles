@@ -13,12 +13,10 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'tpope/vim-endwise'
 Plug 'w0rp/ale'
 Plug 'leafgarland/typescript-vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install()} }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-
-
-
+Plug 'airblade/vim-gitgutter'
 
 
 " theme
@@ -29,6 +27,9 @@ call plug#end()
 set background=dark
 let g:hybrid_custom_term_colors = 1
 colorscheme hybrid
+let g:gitgutter_terminal_reports_focus = 0
+let g:gitgutter_set_sign_backgrounds = 1
+let g:gitgutter_grep=''
 
 syntax on
 
@@ -49,8 +50,8 @@ inoremap jj <Esc>
 " Ctrl-C to open/close NerdTree
 map <C-n> :NERDTreeToggle<CR>
 
-let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+let &t_SI = "\e[6 q" "vertical bar in insert mode
+let &t_EI = "\e[2 q" "Block in normal mode
 
 " Enable backspace
 set backspace=indent,eol,start
