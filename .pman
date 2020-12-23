@@ -16,3 +16,12 @@ psql -d [db_name] -U [username]
 --update Hugo submodule
 git submodule update --remote --merge
 
+
+-- get details about Docker container
+docker inspect <friendly-name|container-id>
+
+-- display msgs a Docker container has written to stderr or stdout
+docker logs <friendly-name|container-id>
+
+-- Name a docker container
+docker run -d --name [NAME] 

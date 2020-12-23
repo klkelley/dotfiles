@@ -11,5 +11,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh" 
 export TERM=xterm-256color
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 export PATH=$MIGRATIONS/bin:$PATH
 export python=python3
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
