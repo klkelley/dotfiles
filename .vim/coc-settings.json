@@ -1,8 +1,15 @@
 {
-    "languageserver": {
-        "elixirLS": {
-            "command": "/Users/karakelley/code/elixir-ls/release/language_server.sh",
-            "filetypes": ["elixir", "eelixir"]
-        }
+  "languageserver": {
+    "elixirLS": {
+      "command": "/Users/karakelley/code/elixir-ls/release/language_server.sh",
+      "filetypes": ["elixir", "eelixir"]
+    },
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
     }
+  }
 }
