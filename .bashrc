@@ -8,6 +8,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+eval "$(direnv hook bash)"
+
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
@@ -98,3 +100,5 @@ PATH=$PATH:/usr/local/sbin
 
 # added by travis gem
 [ -f /Users/karakelley/.travis/travis.sh ] && source /Users/karakelley/.travis/travis.sh
+
+complete -C /Users/karakelley/.asdf/installs/terraform/0.13.5/bin/terraform terraform

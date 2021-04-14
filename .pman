@@ -25,3 +25,6 @@ docker logs <friendly-name|container-id>
 
 -- Name a docker container
 docker run -d --name [NAME] 
+
+-- run PSQL inside docker container
+docker exec -it <CONTAINER_NAME> psql <PSQL_USERNAME> -U <PASSWORD>
